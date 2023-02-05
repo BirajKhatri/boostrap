@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: pink;
+            display:flex;
+            flex-direction:row;/*row,column,row-reverse,column-reverse*/
+            flex-wrap: wrap;
+            justify-content: start;/*start,end,center,space-around,space-between,space-evenly*/
+            align-items:baseline/*baseline,center,start,end,strech*/;
+            height:700px;
+            align-content:center;/*space-around,space-between,start,end,center*/
+        }
+        .box{
+            padding:30px;
+            border:1px solid black;
+            width:500px;
+        }
+        .parent1{
+            display: flex;
+            height:500px;
+        }
+        .a{
+            flex-basis: 500px;
+            align-self:center;
+            order:3;
+        }
+        .b{flex-grow: 1;align-self: start;order:2}
+        .c{flex-grow:1;align-self: end;}
+        .d{flex-grow: 2;align-self: center;order:4}
+    </style>
+</head>
+<body>
+    <div class="parent1">
+        <div class="box a">a</div>
+        <div class="box b">b</div>
+        <div class="box c">c</div>
+        <div class="box d">d</div>
+    </div>
+    <hr>
+    <div class="parent" >
+        <div class="box">a</div>
+        <div class="box">b</div>
+        <div class="box">c</div>
+        <div class="box">d</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+@media(max-width:580px)
+{
+    nav{
+        display:none;
+    }
+    .banner .row,.counter .row{flex-direction: column;}
+    .banner-left,.banner-right{
+        flex-basis: 50%;
+    }
+    .container{padding: 10px;}
+    .banner-right{order:1;}
+    .banner-left{order:2;}
+}
